@@ -37,6 +37,7 @@ public class FlipkartSteps {
     @After
     public void teardown() {
         // if (driver != null) {
+        //     driver.close();
         //     driver.quit();
         // }
     }

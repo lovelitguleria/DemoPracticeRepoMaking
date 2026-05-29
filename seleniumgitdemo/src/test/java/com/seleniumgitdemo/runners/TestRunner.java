@@ -1,9 +1,6 @@
 package com.seleniumgitdemo.runners;
-
-import org.junit.runner.RunWith;
-
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-@RunWith(io.cucumber.junit.Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/FeatureFiles",
         glue = "com.seleniumgitdemo.stepDefinitions",
@@ -15,8 +12,5 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true,
         dryRun = false
 )
-// public class TestRunner extends AbstractTestNGCucumberTests {
-// }
-public class TestRunner{
-    
+public class TestRunner extends AbstractTestNGCucumberTests {
 }
